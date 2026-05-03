@@ -247,13 +247,15 @@
     }
 
     .feature-icon {
-      width: 44px; height: 44px;
-      border-radius: 12px;
+      width: 48px; height: 48px;
+      border-radius: 14px;
       background: var(--plum-dim);
+      border: 1px solid var(--plum-border);
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.3rem;
       margin-bottom: 1.2rem;
+      flex-shrink: 0;
     }
+    .feature-icon svg { display: block; }
 
     .feature h3 {
       font-family: 'Bebas Neue', sans-serif;
@@ -442,33 +444,75 @@
     <h2>Everything you need<br/>to bet smarter</h2>
     <div class="features-grid">
       <div class="feature">
-        <div class="feature-icon">🏆</div>
+        <div class="feature-icon">
+          <!-- Trophy / star prediction -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
         <h3>Top Predictions</h3>
         <p>Identify high-scoring matches with data-driven predictions across the competitions you follow.</p>
         <span class="coeff">Coefficiente 12.0</span>
       </div>
       <div class="feature">
-        <div class="feature-icon">📊</div>
+        <div class="feature-icon">
+          <!-- Bar chart / odds -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"/>
+            <line x1="12" y1="20" x2="12" y2="4"/>
+            <line x1="6" y1="20" x2="6" y2="14"/>
+            <line x1="2" y1="20" x2="22" y2="20"/>
+          </svg>
+        </div>
         <h3>Real-Time Odds</h3>
         <p>Live odds from major bookmakers, all in one place. Always find the best value before you place your bet.</p>
       </div>
       <div class="feature">
-        <div class="feature-icon">🌍</div>
+        <div class="feature-icon">
+          <!-- Globe / leagues -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </div>
         <h3>Explore Leagues</h3>
         <p>Track predictions across top competitions — from Premier League to Serie A and beyond.</p>
       </div>
       <div class="feature">
-        <div class="feature-icon">📋</div>
+        <div class="feature-icon">
+          <!-- List / history -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="8" y1="6" x2="21" y2="6"/>
+            <line x1="8" y1="12" x2="21" y2="12"/>
+            <line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/>
+            <line x1="3" y1="12" x2="3.01" y2="12"/>
+            <line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+        </div>
         <h3>Betting History</h3>
         <p>Every bet, every result. Your full history in one clean, searchable feed.</p>
       </div>
       <div class="feature">
-        <div class="feature-icon">📈</div>
+        <div class="feature-icon">
+          <!-- Trend up / analytics -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+            <polyline points="17 6 23 6 23 12"/>
+          </svg>
+        </div>
         <h3>Performance Analytics</h3>
         <p>Monitor your ROI, win rate and trends with detailed analytics designed for serious bettors.</p>
       </div>
       <div class="feature">
-        <div class="feature-icon">⚡</div>
+        <div class="feature-icon">
+          <!-- Refresh / up to date -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 4 23 10 17 10"/>
+            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+          </svg>
+        </div>
         <h3>Always Up to Date</h3>
         <p>Data refreshed regularly so you always act on current information, not yesterday's numbers.</p>
       </div>
@@ -498,10 +542,6 @@
         <div class="faq-item">
           <h4>A league I follow is missing</h4>
           <p>We are continuously adding competitions. Send us a request and we'll prioritise it in the next update.</p>
-        </div>
-        <div class="faq-item">
-          <h4>How do I report a wrong prediction or result?</h4>
-          <p>Use the contact button above and include the match details. We review all reports manually.</p>
         </div>
         <div class="faq-item">
           <h4>Is Bet&amp;Win free?</h4>
