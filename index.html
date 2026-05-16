@@ -80,7 +80,6 @@
       overflow: hidden;
     }
 
-    /* Subtle geometric background */
     .hero::before {
       content: '';
       position: absolute;
@@ -91,7 +90,6 @@
       pointer-events: none;
     }
 
-    /* Decorative circle */
     .hero-ring {
       position: absolute;
       width: 520px; height: 520px;
@@ -171,7 +169,7 @@
       box-shadow: 0 2px 12px rgba(107,31,78,0.1);
       transition: background 0.2s, box-shadow 0.2s;
     }
-    .badge:hover {
+    a.badge:hover {
       background: var(--plum);
       color: #fff;
       box-shadow: 0 4px 20px rgba(107,31,78,0.25);
@@ -271,7 +269,6 @@
       line-height: 1.65;
     }
 
-    /* coefficient highlight pill */
     .coeff {
       display: inline-block;
       margin-top: 0.8rem;
@@ -422,18 +419,18 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-ring"></div>
-    <p class="eyebrow">Football Predictions · Live Odds · Betting Analytics</p>
+    <p class="eyebrow">Football Predictions · Betting Analytics · ROI Tracking</p>
     <h1>Bet&amp;<span>Win</span></h1>
-    <p class="hero-sub">Smart predictions, real-time odds from top bookmakers, and detailed analytics to track your betting performance.</p>
+    <p class="hero-sub">Smart predictions, detailed statistics and analytics to track your betting performance across Europe's top leagues.</p>
     <div class="badges">
-      <a href="https://apps.apple.com/app/youbet/id000000000" class="badge">
+      <a href="https://apps.apple.com/app/bet-win/id6758056350" class="badge">
         <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
         Download on iOS
       </a>
-      <a href="https://play.google.com/store/apps/details?id=com.youbet" class="badge">
+      <span class="badge" style="opacity:0.5; cursor:default; pointer-events:none;">
         <svg viewBox="0 0 24 24"><path d="M3,20.5v-17c0-0.83,0.94-1.3,1.6-0.8l14,8.5c0.6,0.37,0.6,1.23,0,1.6l-14,8.5C3.94,21.8,3,21.33,3,20.5z"/></svg>
-        Get it on Android
-      </a>
+        Android — Coming Soon
+      </span>
     </div>
     <div class="scroll-hint">Scroll</div>
   </section>
@@ -445,7 +442,6 @@
     <div class="features-grid">
       <div class="feature">
         <div class="feature-icon">
-          <!-- Trophy / star prediction -->
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
           </svg>
@@ -456,20 +452,18 @@
       </div>
       <div class="feature">
         <div class="feature-icon">
-          <!-- Bar chart / odds -->
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="18" y1="20" x2="18" y2="10"/>
-            <line x1="12" y1="20" x2="12" y2="4"/>
-            <line x1="6" y1="20" x2="6" y2="14"/>
-            <line x1="2" y1="20" x2="22" y2="20"/>
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            <line x1="11" y1="8" x2="11" y2="14"/>
+            <line x1="8" y1="11" x2="14" y2="11"/>
           </svg>
         </div>
-        <h3>Real-Time Odds</h3>
-        <p>Live odds from major bookmakers, all in one place. Always find the best value before you place your bet.</p>
+        <h3>Statistical Analysis</h3>
+        <p>Deep dive into team form, head-to-head records and historical trends to find value before the match starts.</p>
       </div>
       <div class="feature">
         <div class="feature-icon">
-          <!-- Globe / leagues -->
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"/>
             <line x1="2" y1="12" x2="22" y2="12"/>
@@ -477,11 +471,10 @@
           </svg>
         </div>
         <h3>Explore Leagues</h3>
-        <p>Track predictions across top competitions — from Premier League to Serie A and beyond.</p>
+        <p>Track predictions across top European competitions — from England's top flight to Italy's, Spain's and beyond.</p>
       </div>
       <div class="feature">
         <div class="feature-icon">
-          <!-- List / history -->
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <line x1="8" y1="6" x2="21" y2="6"/>
             <line x1="8" y1="12" x2="21" y2="12"/>
@@ -496,7 +489,6 @@
       </div>
       <div class="feature">
         <div class="feature-icon">
-          <!-- Trend up / analytics -->
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
             <polyline points="17 6 23 6 23 12"/>
@@ -507,7 +499,6 @@
       </div>
       <div class="feature">
         <div class="feature-icon">
-          <!-- Refresh / up to date -->
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="23 4 23 10 17 10"/>
             <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
@@ -536,7 +527,7 @@
       </div>
       <div class="faq">
         <div class="faq-item">
-          <h4>The odds are not loading</h4>
+          <h4>Predictions are not loading</h4>
           <p>Make sure you have an active internet connection and try pulling down to refresh. If the issue persists, close and reopen the app.</p>
         </div>
         <div class="faq-item">
